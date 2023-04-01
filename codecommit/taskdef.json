@@ -1,0 +1,28 @@
+{
+    "executionRoleArn": "arn:aws:iam::316795178806:role/RadLab-ecs-role",
+    "containerDefinitions": [
+        {
+            "name": "nginx-80-tcp",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "256",
+    "memory": "512",
+    "family": "RadLab-task-def",
+    "runtimePlatform": {
+    "cpuArchitecture": "ARM64",
+    "operatingSystemFamily": "LINUX"
+}
+}

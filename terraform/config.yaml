@@ -1,0 +1,23 @@
+Parameters:
+
+  DeploymentPrefix: <changeme>
+
+  Region: <changeme>
+  VPCCIDR: "10.0.0.0/16"
+
+  AuthTags:
+    Key1: Value1
+    Key2: Value2
+    Key3: Value3
+  
+  Image:
+    Name: "nginx"
+    URL: "123456789012.dkr.ecr.<region>.amazonaws.com/<changeme>:<changeme>"
+    Port: 80
+
+  CodeCommit:
+    Name: <changeme>
+    Branch: <changeme>
+
+
+
