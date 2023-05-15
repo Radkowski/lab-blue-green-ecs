@@ -1,4 +1,4 @@
-# lab-blue-green-ecs
+# Blue green deployment for AWS ECS
 
 ## Overview
 Blue green deployment is an application release model that gradually transfers user traffic from a previous version of an app or microservice to a nearly identical new release—both of which are running in production. 
@@ -16,6 +16,5 @@ There are three ways traﬃc can shift during a blue/green deployment:
 - [ ] **All-at-once**: All traﬃc is shifted from the original task set to the updated task set all at once.
 
 
-## solution diagram
-Blue green deployment for AWS ECS
+## Solution diagram
 ![solution diagram](diagrams/blue-green-ecs.png)
