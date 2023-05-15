@@ -5,6 +5,7 @@ Blue green deployment is an application release model that gradually transfers u
 
 The old version can be called the blue environment while the new version can be known as the green environment. Once production traffic is fully transferred from blue to green, blue can standby in case of rollback or pulled from production and updated to become the template upon which the next update is made.
 
+
 ## Traffic shift
 There are three ways traﬃc can shift during a blue/green deployment:
 
@@ -13,6 +14,7 @@ There are three ways traﬃc can shift during a blue/green deployment:
 - [ ] **Linear**: Traﬃc is shifted in equal increments with an equal number of minutes between each increment. You can choose from predeﬁned linear options that specify the percentage of traﬃc shifted in each increment and the number of minutes between each increment.
 
 - [ ] **All-at-once**: All traﬃc is shifted from the original task set to the updated task set all at once.
+
 
 ## solution diagram
 Blue green deployment for AWS ECS
